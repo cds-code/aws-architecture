@@ -1,7 +1,7 @@
 ```mermaid
 graph TD
     A[バケット] --> B[SQS]
-    B --> C[Lambda<br/>sleep(1 minute)]
+    B --> C["Lambda<br/>sleep(1 minute) after processed"]
     
     style A fill:#ff9999
     style B fill:#ffcc99
