@@ -1,3 +1,9 @@
-# aws-architecture
-AWS Architecture Laboratory
-
+```mermaid
+graph TD
+    A[Aバケット] --> B[SQS]
+    B --> C[Lambda<br/>処理終了後sleep(1 minute)]
+    
+    style A fill:#ff9999
+    style B fill:#ffcc99
+    style C fill:#cc99ff
+```
